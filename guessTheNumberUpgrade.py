@@ -1,4 +1,4 @@
-# replace the contents of this comment with your name
+# Colin Hummel
 import random
 
 # -------------------------------------------------------------------
@@ -7,11 +7,7 @@ import random
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
 def generateNumber( topLimit ):
-    
-    # TO DO: ####################################################
-    # Write code in this function that calculates and           #
-    # returns a random number between 1 and the user's topLimit #
-    #############################################################
+	generateNumber = random.randint(1, topLimit)
     
 # end of generateNumber function -------------------------------------
 
@@ -44,6 +40,15 @@ def askUserToGuess( times, secretNumber ):
 #   the 'userGuess' parameter is the answer entered by the user
 #   the 'userSecretNumber' parameter is the randomly generated number
 def evaluateAnswer( userGuess, userSecretNumber ):
+
+	if userGuess < userSecretNumber:
+		print('Your Guess is too low.')
+	return (false)
+	if userGuess > userSecretNumber:
+		print('Your Guess is too high.')
+	return (false)
+	if userGuess = userSecretNumber:
+	return (true)
     
     # TO DO: ####################################################
     # Write code in this function that compares userGuess and   #
@@ -67,6 +72,16 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):
     
+print:('Welcome to the number guessing game! Please input the upper limit of the number you'd like to guess!')
+topLimit = input()
+
+print:(Please choose the number of times you'd like to guess the number.')
+totalGuesses = input()
+
+generateNumber
+	generateNumber = theNumber
+
+print:('Please guess a number between 1 and '+topLimit+'. You have '+totalGuesses+' remaining.')
     # TO DO: ####################################################
     # Write code in this function that                          #
     # 1. Greets the user                                        #
