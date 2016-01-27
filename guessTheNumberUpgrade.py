@@ -44,12 +44,12 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 
 	if userGuess < userSecretNumber:
 		print('Your Guess is too low.')
-		return (false)
-	if userGuess > userSecretNumber:
+		return False
+	elif userGuess > userSecretNumber:
 		print('Your Guess is too high.')
-		return (false)
+		return False
 	if userGuess = userSecretNumber:
-		return (true)
+		return True
     
     # TO DO: ####################################################
     # Write code in this function that compares userGuess and   #
@@ -74,14 +74,14 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 def playGame( showAnswer ):
     
 	print:('Welcome to the number guessing game! Please input the upper limit of the number you'd like to guess!')
-		topLimit = int(input())
+	topLimit = int(input())
 
 	print:(Please choose the number of times you'd like to guess the number.')
-		totalGuesses = int(input())
+	totalGuesses = int(input())
 
 	theNumber = generateNumber(topLimit)
 
-	print:('Please guess a number between 1 and '+topLimit+'. You have '+totalGuesses+' remaining.')
+	print:('Please guess a number between 1 and ' + str(topLimit) + '. You have ' + str(totalGuesses) + ' remaining.')
 	askUserToGuess(totalGuesses, theNumber)
     # TO DO: ####################################################
     # Write code in this function that                          #
