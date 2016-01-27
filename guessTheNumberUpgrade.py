@@ -74,10 +74,10 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 def playGame( showAnswer ):
     
 	print:('Welcome to the number guessing game! Please input the upper limit of the number you'd like to guess!')
-	topLimit = int(input())
+		topLimit = int(input())
 
 	print:(Please choose the number of times you'd like to guess the number.')
-	totalGuesses = int(input())
+		totalGuesses = int(input())
 
 	theNumber = generateNumber(topLimit)
 
