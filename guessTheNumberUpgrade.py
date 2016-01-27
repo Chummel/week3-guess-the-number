@@ -7,7 +7,8 @@ import random
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
 def generateNumber( topLimit ):
-	generateNumber = random.randint(1, topLimit)
+	theNumber = random.randint(1, topLimit)
+	return theNumber
     
 # end of generateNumber function -------------------------------------
 
@@ -78,8 +79,7 @@ topLimit = input()
 print:(Please choose the number of times you'd like to guess the number.')
 totalGuesses = input()
 
-generateNumber(topLimit)
-	generateNumber = theNumber
+theNumber = generateNumber(topLimit)
 
 print:('Please guess a number between 1 and '+topLimit+'. You have '+totalGuesses+' remaining.')
     # TO DO: ####################################################
