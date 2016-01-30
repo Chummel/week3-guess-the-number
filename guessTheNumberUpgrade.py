@@ -24,14 +24,14 @@ def generateNumber( topLimit ):
 def askUserToGuess( times, secretNumber ):
 
     # this loop cycles through all the user guesses
-    for guessesTaken in range(1, times+1):
-        print('Take your guess #' + str(guessesTaken) + ': ')
-        guess = int(input())
+	for guessesTaken in range(1, times+1):
+	print('Take your guess #' + str(guessesTaken) + ': ')
+	guess = int(input())
 
-        if evaluateAnswer( guess, secretNumber ) == True:
-            return True
+	if evaluateAnswer( guess, secretNumber ) == True:
+		return True
         
-    return False
+	return False
 # end of askUserToGuess function ----------------------------------
 
 
@@ -104,12 +104,12 @@ def playGame( showAnswer ):
     # you don't need to change anything below this comment ##############
     # ///////////////////////////////////////////////////////////////////
     # this if statement allows us to show the hidden number to the user
-    if( showAnswer == True ):
-        print('--shhh, the real number is ' + str(theNumber) + '.')
+	if( showAnswer == True ):
+		print('--shhh, the real number is ' + str(theNumber) + '.')
     
     #this gives a sucess/fail message if the user guessed correctly in the allotted attempts
-    if askUserToGuess(totalGuesses,theNumber) == True:
-        print('Good job! You guessed my number!')
-    else:
-        print('Nope. The number I was thinking of was ' + str(theNumber))
+	if askUserToGuess(totalGuesses,theNumber) == True:
+		print('Good job! You guessed my number!')
+	else:
+		print('Nope. The number I was thinking of was ' + str(theNumber))
 # end of playGame function -----------------------------------------
