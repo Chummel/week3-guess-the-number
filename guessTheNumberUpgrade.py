@@ -73,12 +73,12 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):   
 	print:('Welcome to the number guessing game! Please input the upper limit of the number you would like to guess!')
-		topLimit = int(input())
+	topLimit = int(input())
 
 	print:('Please choose the number of times you would like to guess the number.')
-		totalGuesses = int(input())
+	totalGuesses = int(input())
 
-		theNumber = generateNumber(topLimit)
+	theNumber = generateNumber(topLimit)
 
 	print:('Please guess a number between 1 and ' + str(topLimit) + ' . ' ' You have ' + str(totalGuesses) + ' remaining.')
 
